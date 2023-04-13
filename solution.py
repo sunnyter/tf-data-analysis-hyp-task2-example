@@ -8,5 +8,5 @@ def solution(x: np.array, y: np.array) -> bool:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    result = stats.anderson_ksamp(x,y)
+    result = stats.anderson_ksamp([x,y])
     return result.pvalue < 0.04 # Ваш ответ, True или False
